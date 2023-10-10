@@ -1,8 +1,7 @@
 .App{
   background-color: #e2e2e6;
-}
-.AppDiv{
-  margin:50px 50px 50px 50px;
+  width: 100%;
+  height: 100%;
 }
 .rating {
   font-size: 20px; 
@@ -71,4 +70,40 @@
 /* When hovering over the .shape element, display the .block element */
 .productImage:hover + .productViewProduct{
   display: block;
+}
+.FavBtn{
+  margin: -170px 10px 135px 90px;
+}
+.horizontal-view {
+  margin: 0rem 0rem 0rem 0rem;
+  background-color: red;
+  height: 700px;
+  width: 100%;
+  
+}
+.horizontal-view::-webkit-scrollbar {
+  height: 0;
+  visibility: hidden;
+}
+.latestTrends{
+  height: 100%;
+  width: 100%;
+}
+
+.product-list {
+  width: 800px;
+  height: 100px;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+}
+.LatestTrends{
+  margin: 10px 0px 0px 10px;
+}
+.PopularSuggestion{
+  margin: 95px 0px 0px 10px;
+}
+
+.product-card {
+  margin-right: 20px;
 }
