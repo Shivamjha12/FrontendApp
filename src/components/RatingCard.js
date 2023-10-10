@@ -1,9 +1,13 @@
 import React from 'react'
-function RatingCard(){
+import StarRating from './StarRating'
+function RatingCard({rating=0,noofreviews=0}){
     return(
-    <div>
-    <p>RatingCard</p>
+    <div className="RatingCard">
+    <StarRating rating={rating}/>
+    <div className="noOfReviews">
+        <p>({noofreviews})</p>
     </div>
+</div>
     );
 }
 export default RatingCard;

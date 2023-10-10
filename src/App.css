@@ -5,7 +5,7 @@
   margin:50px 50px 50px 50px;
 }
 .rating {
-  font-size: 24px; 
+  font-size: 20px; 
   color: gold;
 }
 .star {
@@ -16,4 +16,59 @@
 .empty-star {
   display: inline-block;
   color: #ccc; 
+}
+.RatingCard{
+  background-color: #fff;
+}
+.noOfReviews{
+  font-size: 12px;
+  margin: -32px 0px 0px 86px;
+}
+.original-price {
+  text-decoration: line-through;
+  color: #999; 
+  margin: 0px 0px 0px 0px !important;
+}
+
+.discounted-price {
+  color: #645deb;
+  margin: 0px 0px 0px 9px !important;
+}
+.productViewProduct{
+  background-color: #645deb !important;
+  width: 130px;
+  height: 35px;
+}
+.productCard{
+  width: 110px;
+  height: 35px;
+  background-color: #fff;
+}
+.productTitle{
+  font-size: 12px;
+  font-weight: 150%;
+  inline-size: 130px;
+  margin: 0px 0px 0px 0px;
+  /* background-color: red; */
+}
+.productViewProduct{
+  opacity: 70%;
+  height: 30px;
+  position: absolute;
+  margin: -34px 0px 0px 0px;
+}
+.productViewProductTitle{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 400;
+  margin: 4px 0px 0px 0px;
+}
+.productViewProduct {
+  display: none;
+}
+
+/* When hovering over the .shape element, display the .block element */
+.productImage:hover + .productViewProduct{
+  display: block;
 }
