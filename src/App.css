@@ -1,8 +1,15 @@
-.App{
-  background-color: #e2e2e6;
-  width: 100%;
-  height: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Poppins", sans-serif;
 }
+
+body {
+  background-color: #eaeaea !important;
+}
+
 .rating {
   font-size: 20px; 
   color: gold;
@@ -86,8 +93,10 @@
   visibility: hidden;
 }
 .latestTrends{
-  height: 100%;
-  width: 100%;
+  background-color: #fff;
+  justify-content: center;
+  width: 790px;
+  height: 400px;
 }
 
 .product-list {
@@ -101,9 +110,39 @@
   margin: 10px 0px 0px 10px;
 }
 .PopularSuggestion{
-  margin: 95px 0px 0px 10px;
+  margin: 115px 0px 5px 10px;
+
+}
+.SearchBarInput{
+  margin: 10px 0px 0px 200px;
+}
+.popuptrendcard{
+  margin: 10px 0px 0px 75px;
+  position: absolute;
+}
+.searchResultSearchBar{
+  margin: 10px 0px 0px 500px;
+}
+.popularSuggestion{
+  margin: 0px 0px 0px 10px;
+}
+.searchResultTitle{
+  margin: 0px 0px 0px 10px;
 }
 
 .product-card {
   margin-right: 20px;
+}
+.searchPage{
+  height: 100vh; 
+  width: 100%; 
+  background-image: url('https://images.pexels.com/photos/1884583/pexels-photo-1884583.jpeg?auto=compress&cs=tinysrgb&w=1540')
+}
+.Main {
+  height: 100%;
+  width: 100%;
+}
+.SearchBar{
+  margin: 0px 10px 10px 250px;
+  padding: 90px 100px 225px 10px;
 }
