@@ -10,7 +10,7 @@ const BrandFilter = ({ brands,title }) => {
   };
 
   return (
-    <div>
+    <div style={{"margin":"0px 0px 10px 0px"}}>
       <h3>{title}</h3>
       {
       Object.keys(brands).map((brand) => (
