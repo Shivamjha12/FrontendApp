@@ -137,17 +137,59 @@ body {
   margin-right: 20px;
 }
 .searchPage{
-  height: 100vh; 
-  width: 100%; 
-  background-image: url('https://images.pexels.com/photos/1884583/pexels-photo-1884583.jpeg?auto=compress&cs=tinysrgb&w=1540')
+  height: 112rem; 
+  width: 63.3rem; 
+  background-image: url('https://images.pexels.com/photos/1884583/pexels-photo-1884583.jpeg?auto=compress&cs=tinysrgb&w=1540');
+
+  @media (min-width: 768px) {
+    height: 100vh; 
+    width: 100%; 
+    background-image: url('https://images.pexels.com/photos/1884583/pexels-photo-1884583.jpeg?auto=compress&cs=tinysrgb&w=1540');
+  }
+
 }
+
 .Main {
   height: 100%;
   width: 100%;
 }
+.searchPageInput{
+  height:100px;
+  width: 800px;
+  padding: 5px 5px 5px 25px;
+  margin: 10px 10px 10px -130px;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 27.5px;
+  @media (min-width: 768px) {
+    height:48px;
+    width: 500px;
+    border-radius: 10px;
+    border: 0px;
+    outline: none;
+    font-size: 17.5px;
+    padding: 5px 5px 5px 25px;
+    margin: 5px 10px 20px 10px;
+  }
+}
+.searchPageIcon{
+  position: absolute;
+  margin: -70px 0px 0px 610px;
+  height: 2rem;
+  width: 2rem;
+  @media (min-width: 768px) {
+    position: absolute;
+    margin: 20px 30px 0px -40px;
+  }
+}
 .SearchBar{
-  margin: 0px 10px 10px 250px;
-  padding: 90px 100px 225px 10px;
+  margin: 0px 10px 10px 0px;
+  padding: 500px 100px 225px 10px;
+
+  @media (min-width: 768px) {
+    margin: 0px 10px 10px 250px;
+    padding: 90px 100px 225px 10px;
+  }
 }
 .result-items {
   display: flex;

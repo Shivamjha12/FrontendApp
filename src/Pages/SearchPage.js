@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { FaSearch } from 'react-icons/fa';
 import {useNavigate} from "react-router-dom";
 
-function SearchPage({h=48,w=500,r=10}){
+function SearchPage(){
     
     const [isSearch, setIsSearch] = useState(false);
     const [search,setSearch] = useState('')
@@ -22,8 +22,8 @@ function SearchPage({h=48,w=500,r=10}){
             <div className="SearchBar" >
                 <div className="SearchBarInput">
                     <form onSubmit={handleSubmit}>
-                    <input type="text" onFocus={handleSearch} onBlur={handleSearch} onChange={(e) => { setSearch(e.target.value)}} style={{ "height":`${h}px`,"width":`${w}px`,"border-radius":`${r}px`,"border":"0px","outline": "none","font-size": "17.5px","padding":"5px 5px 5px 25px"}} placeholder="Search" />
-                    <i><FaSearch style={{position: "absolute",margin:"20px 30px 0px -40px"}}/></i>
+                    <input className="searchPageInput" type="text" onFocus={handleSearch} onBlur={handleSearch} onChange={(e) => { setSearch(e.target.value)}}    placeholder="Search" />
+                    <i><FaSearch className="searchPageIcon"/></i>
                     </form>
                 </div>
             <div className="popuptrendcard">

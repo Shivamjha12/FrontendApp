@@ -15,7 +15,7 @@ function SearchBar({h=48,w=500,r=10}) {
   }
   return (
     <>
-    <input type="text" onSubmit={handleSubmit} onFocus={handleSearch} onBlur={handleSearch} onChange={(e) => { setSearch(e.target.value)}} style={{ "height":`${h}px`,"width":`${w}px`,"border-radius":`${r}px`,"font-size": "17.5px","padding":"5px 5px 5px 25px"}} placeholder="Search" />
+    <input className="searchInput" type="text" onSubmit={handleSubmit} onFocus={handleSearch} onBlur={handleSearch} onChange={(e) => { setSearch(e.target.value)}} style={{ "height":`${h}px`,"width":`${w}px`,"border-radius":`${r}px`,"font-size": "17.5px","padding":"5px 5px 5px 25px"}} placeholder="Search" />
      <i><FaSearch style={{position: "absolute",margin:"16px 30px 0px -40px"}}/></i>
     </>
   );
