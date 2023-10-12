@@ -4,6 +4,25 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ProductCard from "../components/ProductCard";
+import BrandFilter from "../components/BrandFilter";
+const brandData = {
+  "Acme": "Acme",
+  "GlobalTech": "GlobalTech",
+  "WonderWidgets": "WonderWidgets",
+};
+const PriceData = {
+  "Under 500": "<=500>",
+  "500 to 1000": ">=500 and <=1000",
+};
+const ReviewData = {
+  "5":"5",
+  "4":"4",
+  "3":"3",
+  "2":"2",
+  "1":"1",
+}
+
+
 const dummyData = [
     {
       "title": "Stylish Blue Denim Jacket",
@@ -100,11 +119,14 @@ function SearchResult(){
             className="Filters" 
             // style={{"margin":"0px 0px 0px 0px","position": "absolute","background-color": "#000","width":"20%"}}
             >
-                <h2>Filters</h2>
                 <div className="InsideFilter" style={{}}>
-                    <h3>Filter</h3>
-                    <p>Filter
-                    </p>
+                    <BrandFilter brands={brandData} title={"Brands"}/>
+                </div>
+                <div className="InsideFilter" style={{}}>
+                    <BrandFilter brands={PriceData} title={"Price Range"}/>
+                </div>
+                <div className="InsideFilter" style={{}}>
+                    <BrandFilter brands={ReviewData} title={"Ratings"}/>
                 </div>
             </div>
             </Row>

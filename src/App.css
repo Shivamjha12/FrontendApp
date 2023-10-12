@@ -203,10 +203,11 @@ body {
   width: 95% !important;
 }
 .Filters{
-  margin: 0px 0px 0px -150px;
+  position: absolute;
+  margin: -60px 0px 0px -150px;
   height: 100%;
-  background-color: #2c2c2c !important;
-  width: 30%;
+  background-color: #f0f0f0 !important;
+  width: 20%;
 }
 .InnerFilters{
   margin: 0px 0px 0px 0px;
@@ -279,11 +280,10 @@ body {
     text-transform: capitalize;
 }
 .rating{
-    margin-bottom: 10px;
+    margin: 0px 0px 10px 0px;
 }
-.rating li{
-    display: inline-block;
-    color: #f34723;
+.filterRating{
+  margin: -29px 0px 0px 20px;
 }
 .price{
     font-size: 15px;
