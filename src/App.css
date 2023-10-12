@@ -180,6 +180,8 @@ body {
   @media (min-width: 768px) {
     position: absolute;
     margin: 20px 30px 0px -40px;
+    height: 18px;
+    width:  18px;
   }
 }
 .SearchBar{
